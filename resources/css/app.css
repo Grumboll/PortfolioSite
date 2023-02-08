@@ -1,0 +1,91 @@
+@import '~@fortawesome/fontawesome-free/css/fontawesome';
+@import '~@fortawesome/fontawesome-free/css/regular';
+@import '~@fortawesome/fontawesome-free/css/solid';
+@import '~@fortawesome/fontawesome-free/css/brands';
+.footer{
+    background-color: rgb(184, 184, 184);
+    height: 13vh;
+    min-height: 13vh;
+}
+.name{
+    padding: 10px;
+    margin-top: 10px;
+    font-size: x-large;
+
+}
+.socials{
+    height: 9vh;
+    margin: 0 auto;
+    width: 20%;
+    padding-top: 30px;
+}
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #F2F2FA;
+    padding: 10px;
+}
+.nav{
+    display: flex;
+    gap: 15px;
+    text-decoration: underline;
+}
+.nav a{
+    padding: 2px 20px 2px 20px;
+    border-radius: 15px;
+    box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+    box-sizing: border-box;
+    color: #121212;
+    cursor: pointer;
+}
+.nav a:hover{
+    box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+}
+.underlineAnim{
+    display: inline-block;
+    position: relative;
+}
+.underlineAnim:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #121212;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.underlineAnim:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.carousel {
+    width: 100%;
+    height: 525px;
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+.showcaseitem{
+    height: 50px;
+    width: 50px;
+}
+.carousel .slide {
+    display: inline-block;
+    padding-top: 5px;
+    padding-right: 5px;
+}
+body{
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f6f6fc;
+}
+.content{
+    min-height: calc(82vh - 73px);
+}
+.carouselImage{
+    width: 800px;
+    height: 500px;
+}
